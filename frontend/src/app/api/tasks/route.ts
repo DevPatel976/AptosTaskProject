@@ -10,7 +10,7 @@ export async function POST(request: Request) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        description: body.description,
+        description: body.title, 
         cost: parseFloat(body.amount) || 0,
         status: 'pending',
         paymentStatus: 'pending',

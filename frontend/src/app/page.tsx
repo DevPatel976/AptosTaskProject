@@ -2,12 +2,23 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { WalletConnect } from '@/components/WalletConnect';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 p-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/logo.svg"
+              alt="Autonomous Task Executor Logo"
+              width={100}
+              height={100}
+              priority
+              className="animate-float"
+            />
+          </div>
           <h1 className="text-4xl font-bold text-white mb-4">
             Autonomous Task Executor
           </h1>
@@ -51,9 +62,9 @@ export default function Home() {
 
           <Card className="bg-gray-800 border-gray-700">
             <CardHeader>
-              <CardTitle className="text-white">Wallet</CardTitle>
+              <CardTitle className="text-white">Connect Wallet</CardTitle>
               <CardDescription className="text-gray-400">
-                Manage your Aptos wallet
+                Link your Aptos wallet to get started
               </CardDescription>
             </CardHeader>
             <CardContent>
